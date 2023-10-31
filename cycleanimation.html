@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cycle animation</title>
+    <style>
+        img{
+            width: 300px;
+        }
+        .container{
+            height: 90px;
+            width: 90px;
+            background-image: repeating-conic-gradient(black 0deg 10deg, white 10deg 20deg);
+            border-radius: 50%;
+            position: relative;
+            top: 245px;
+            left: 19px;
+            animation: cycle 0.9ms linear infinite;
+            /* transform: translateX(-50%); */
+         }
+         .cc{
+            height: 90px;
+            width: 90px;
+            background-image: repeating-conic-gradient(black 0deg 10deg, white 10deg 20deg);
+            border-radius: 50%;
+            position: absolute;
+            top: 252px;
+            left: 200px;
+            animation: cycle 0.9ms linear infinite;
+         }
+         @keyframes cycle{
+            100%{
+                transform: rotate(360deg);
+                /* transform: translateY(-1px); */
+            }
+            
+         }
+         .road img{
+            width: 500px;
+         }
+         .road{
+            position: absolute;
+            /* background-image: url(pattern-road-texture-20764759.webp); */
+            bottom: 20px;
+            z-index: -0.8;
+
+
+         }
+         body{
+             /* background-image: url(pattern-road-texture-20764759.webp); */
+             background-repeat: no-repeat;
+         }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="c"><img src="download.png"></div>
+    <div class="cc"></div>
+    <!-- <div class="road"><img src=""></div> -->
+    
+</body>
+</html>

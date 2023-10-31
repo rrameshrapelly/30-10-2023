@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "img1 img1 img2"
+            "img1 img1 img3"
+            "img4 img5 img6";
+            width: 70%;
+            gap: 5px;
+        }
+        img{
+            width: 100%;
+        }
+        .i1{
+            grid-area: img1;
+            height: 100%;
+        }
+        .i2{
+            grid-area: img2;
+        }
+        .i3{
+            grid-area: img3;
+        }
+        .i4{
+            grid-area: img4;
+        }
+        .i5{
+            grid-area: img5;
+        }
+        .i6{
+            grid-area: img6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="architect.jpg" class="i1">
+        <img src="house2 (1).jpg" class="i2">
+        <img src="house2.jpg" class="i3">
+        <img src="house3.jpg" class="i4">
+        <img src="house4.jpg" class="i5">
+        <img src="house5.jpg" class="i6">
+    </div>
+</body>
+</html>
